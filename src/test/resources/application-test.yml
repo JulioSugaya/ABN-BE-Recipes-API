@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    url: jdbc:tc:postgresql:12.9-alpine:///integration_tests
+  test:
+    database:
+      replace: none
+  flyway:
+    enabled: false
+  jpa:
+    hibernate:
+      ddl-auto: create
+  security:
+    user:
+      name: abn
+      password: 1234
